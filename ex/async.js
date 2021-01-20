@@ -1,7 +1,7 @@
 
 async function fetchUser() {
 
-    return 'kim';
+    return 'async test';
 }
 
 const user = this.fetchUser();
