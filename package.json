@@ -1,0 +1,8 @@
+{
+  "name": "_javascript",
+  "version": "yarn install",
+  "main": "index.js",
+  "repository": "https://github.com/dev-sm-0/_javascript.git",
+  "author": "kim.sangmuk <kim.sangmuk@initian.co.jp>",
+  "license": "MIT"
+}
