@@ -1,4 +1,10 @@
 
+const sDate = new Date().getTime()
+
+function getDiff() {
+    return (new Date().getTime() - sDate) / 1000 + 's => '
+}
+
 async function fetchUser() {
 
     return 'async test';
@@ -14,12 +20,12 @@ function delay(ms) {
 }
 
 async function getApple() {
-    await delay(1000);
+    await delay(4000);
     return 'Apple';
 }
 
 async function getBanana() {
-    await delay(2000);
+    await delay(3000);
     return 'Banana';
 }
 
@@ -29,14 +35,14 @@ async function pickFruits() {
 
     const apple = await appleWait
     const banana = await bananaWait
-    return `${apple} + ${banana}`
+    return getDiff() +  `${apple} + ${banana}`
 }
 
 pickFruits().then(console.log);
 
 function pickAllFruits() {
     return Promise.all([getBanana(), getApple()])
-    .then(fruits => fruits.join(' + '))
+    .then(fruits =>  getDiff() + fruits.join(' + '))
 }
 
 pickAllFruits().then(console.log)
